@@ -16,6 +16,7 @@ buildscript {
 }
 
 apply plugin: "forge"
+apply plugin: 'idea'
 
 sourceCompatibility = "1.6"
 targetCompatibility = "1.6"
@@ -59,6 +60,8 @@ minecraft {
     version = "1.7.10-10.13.4.1448-1.7.10"
     runDir = "eclipse"
 }
+
+idea { module { inheritOutputDirs = true } }
 
 dependencies {
 	compile "org.apache.directory.studio:org.apache.commons.codec:1.8"
